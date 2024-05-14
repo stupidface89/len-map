@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  api:
+    command: gunicorn lenmap.wsgi --workers 4 --bind 0.0.0.0:8000
+    build: ./lenmap
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres_db
+      - nginx
+    volumes:
+      - "./lenmap:/opt/lenmap"
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/configs:/etc/nginx/conf.d:ro
+      - ./lenmap/media:/data/media
+      - ./lenmap/static:/data/static
+      -  ./frontend/build:/data/build
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+  postgres_db:
+    container_name: lenmap_db
+    restart: always
+    build:
+      context: ./postgres_db
+      args:
+        - POSTGRES_PORT=${POSTGRES_PORT}
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - "./postgres_db/pg_data:/var/lib/postgresql/data"
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d  $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5

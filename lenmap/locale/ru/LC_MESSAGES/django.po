@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-13 16:55+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: recordmap/models.py:47 recordmap/models.py:88 recordmap/models.py:115
+msgid "Обращение"
+msgstr ""
+
+#: recordmap/models.py:48
+msgid "Путь до файла"
+msgstr ""
+
+#: recordmap/models.py:51
+msgid "Фото обращения"
+msgstr ""
+
+#: recordmap/models.py:52
+msgid "Фото обращений"
+msgstr ""
+
+#: recordmap/models.py:60
+msgid "Наименование"
+msgstr ""
+
+#: recordmap/models.py:61
+msgid "Адрес местонахождения"
+msgstr ""
+
+#: recordmap/models.py:64
+msgid "Контактное лицо"
+msgstr ""
+
+#: recordmap/models.py:70
+msgid "Ответственное ведомство/организация"
+msgstr ""
+
+#: recordmap/models.py:71
+msgid "Ответственные ведомства и организации"
+msgstr ""
+
+#: recordmap/models.py:76
+msgid "Номер обращения"
+msgstr ""
+
+#: recordmap/models.py:77
+msgid "Имя"
+msgstr ""
+
+#: recordmap/models.py:78
+msgid "Номер телефона"
+msgstr ""
+
+#: recordmap/models.py:79
+msgid "Адрес проблемы"
+msgstr ""
+
+#: recordmap/models.py:80
+msgid "Статус обращения"
+msgstr ""
+
+#: recordmap/models.py:81
+msgid "Дата создания"
+msgstr ""
+
+#: recordmap/models.py:83
+msgid "Текст обращения"
+msgstr ""
+
+#: recordmap/models.py:84
+msgid "Координаты широты"
+msgstr ""
+
+#: recordmap/models.py:85
+msgid "Координаты долготы"
+msgstr ""
+
+#: recordmap/models.py:89 recordmap/models.py:116
+msgid "Обращения"
+msgstr ""
+
+#: recordmap/models.py:109
+msgid "Документ запроса"
+msgstr ""
+
+#: recordmap/models.py:110
+msgid "Документ ответа"
+msgstr ""
+
+#: recordmap/models.py:111
+msgid "Дата отправки запроса"
+msgstr ""
+
+#: recordmap/models.py:112
+msgid "Дата получения ответа"
+msgstr ""
