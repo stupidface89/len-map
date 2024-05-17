@@ -1,0 +1,13 @@
+{
+  "short_name": "lenmap",
+  "name": "Карта проблем Ленинского района",
+  "icons": [
+    {
+
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
