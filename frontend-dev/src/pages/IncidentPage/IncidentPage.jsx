@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch";
 import {client, urls} from "../../api/client";
 
 import ViewsPage from "./ViewsPage";
-import Image from "../../../src/components/Image/Image";
+import Image from "../../components/Image/Image";
 import StatusTag from "../../components/StatusTag/StatusTag";
 import ProgressSteps from "./ProgressSteps";
 

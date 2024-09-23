@@ -26,7 +26,7 @@ class IncidentAdmin(admin.ModelAdmin):
     inlines = (IncidentPhotoInline, IncidentDocsInline,)
 
     def map_url(self, obj):
-        url = f'http://192.168.0.52/map/?lat={obj.latitude}&long={obj.longitude}&zoom={16}'
+        url = f'http://192.168.0.52/map?lat={obj.latitude}&long={obj.longitude}&zoom={16}'
         return format_html(f"<a href='{url}'>Посмотреть на карте</a>")
 
     def get_queryset(self, *args, **kwargs):

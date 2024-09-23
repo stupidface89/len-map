@@ -6,8 +6,6 @@ const useSubmitForm = (callback) => {
     const [error, setError] = useState(null);
 
     const sendForm = async (data) => {
-        // const formData = prepareFormData(data);
-        // console.log(formData)
         setError(null)
 
         try {

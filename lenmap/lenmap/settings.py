@@ -12,7 +12,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = (os.getenv('DJANGO_DEBUG', 'False') == 'True')
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['http://192.168.0.52', 'https://lenmap.ru']
+CSRF_TRUSTED_ORIGINS = ['http://192.168.0.52', 'https://lenmap.ru', 'http://0.0.0.0']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -47,6 +47,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://192.168.0.52:3000',
     'http://192.168.0.52:8000',
     'http://192.168.0.52',
+    'http://0.0.0.0'
 ]
 
 CORS_ALLOW_HEADERS = (

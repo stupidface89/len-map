@@ -3,3 +3,5 @@
 .venv
 node_modules
 pg_data
+.DS_Store
+.idea
